@@ -1,8 +1,10 @@
-
+import Banner from "../../components/banner";
+import Cards from "../../components/cards";
 const Home= () => {
     return (
    <>
-   <h1>Home component</h1>
+    <Banner/>
+    <Cards/>
    </>
     )
   }

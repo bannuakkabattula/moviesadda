@@ -13,11 +13,11 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Analytics', description: 'Telugu ', href: '#', icon: ChartPieIcon },
+  { name: 'Engagement', description: 'English', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Security', description: 'Hindi', href: '#', icon: FingerPrintIcon },
+  { name: 'Integrations', description: 'Malayalam', href: '#', icon: SquaresPlusIcon },
+  { name: 'Automations', description: 'Thamil', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -34,12 +34,12 @@ const Header = () =>{
     
     return(
         <div>
-              <header className="bg-white">
+              <header className="bg-gray-900">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            <span className="sr-only">MOVIES ADDA</span>
+            <img className="h-14 w-auto" src="assets/images/logo.svg" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -54,9 +54,9 @@ const Header = () =>{
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
+               Movies
+              <ChevronDownIcon className="h-5 w-5 flex-none text-white" aria-hidden="true" />
             </Popover.Button>
 
             <Transition
@@ -79,7 +79,7 @@ const Header = () =>{
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <a href={item.href} className="block font-semibold text-white">
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -93,9 +93,9 @@ const Header = () =>{
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-white hover:bg-gray-100"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      <item.icon className="h-5 w-5 flex-none text-white" aria-hidden="true" />
                       {item.name}
                     </a>
                   ))}
@@ -104,19 +104,23 @@ const Header = () =>{
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+          <a href="#" className="text-sm font-semibold leading-6 text-white">
+            Webseries
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+          <a href="#" className="text-sm font-semibold leading-6 text-white">
+            Cricket
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+          <a href="#" className="text-sm font-semibold leading-6 text-white">
+            Stream
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <img
+        className="inline-block h-14 w-14 rounded-full"
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        alt=""
+      />
           </a>
         </div>
       </nav>
@@ -128,7 +132,7 @@ const Header = () =>{
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="assets/images/logo.svg"
                 alt=""
               />
             </a>
@@ -193,7 +197,11 @@ const Header = () =>{
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  <img
+        className="inline-block h-14 w-14 rounded-full"
+        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        alt=""
+      />
                 </a>
               </div>
             </div>
