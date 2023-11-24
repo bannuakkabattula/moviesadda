@@ -10,14 +10,14 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { BanknotesIcon, ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Telugu ', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'English', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Hindi', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Malayalam', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Thamil', href: '#', icon: ArrowPathIcon },
+  { name: 'Analytics', description: 'Telugu ', href: '#', icon: BanknotesIcon },
+  { name: 'Engagement', description: 'English', href: '#', icon: BanknotesIcon},
+  { name: 'Security', description: 'Hindi', href: '#', icon: BanknotesIcon },
+  { name: 'Integrations', description: 'Malayalam', href: '#', icon: BanknotesIcon },
+  { name: 'Automations', description: 'Tamil', href: '#', icon: BanknotesIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -80,7 +80,7 @@ const Header = () =>{
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-white">
-                          {item.name}
+                        
                           <span className="absolute inset-0" />
                         </a>
                         <p className="mt-1 text-gray-600">{item.description}</p>
@@ -88,18 +88,7 @@ const Header = () =>{
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-white hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-white" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+           
               </Popover.Panel>
             </Transition>
           </Popover>
